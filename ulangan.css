@@ -1,0 +1,107 @@
+html body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ddd;
+    line-height: 1.65;
+    padding-bottom: 1000px;
+}
+
+/* latihan satu */
+.container-satu{
+    width: 800px;
+    margin: 50px auto;
+    /* display: flex; */
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.content{
+    flex: 3;
+    order: 2;
+}
+.sidebar2{
+    flex: 2;
+    order: 3;
+}
+.sidebar1{
+    flex: 1;
+    order: 1;
+}
+/* latihan satu selesai */
+
+/* ltihan dua */
+.container-dua{
+    max-width: 800px;
+    margin: 50px auto;
+   
+}
+.portofolio{
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.portofolio.satu{
+    background-color: rgb(245, 114, 114);
+}
+.portofolio.dua{
+    background-color: rgb(133, 133, 246);
+}
+.portofolio.tiga{
+    background-color: rgb(133, 248, 133);
+}
+/* latihan dua selesai */
+
+
+/* latihan ke tiga */
+.container-tiga{
+    max-width: 800px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.thubnail{
+    max-width: 30%;
+}
+.thubnail img{
+    width: 100%;
+}
+/* latihan ke tiga selesai */
+
+/* latihan empat */
+.container-empat{
+    width: 800px;
+    margin: 50px auto;
+    display: flex;
+}
+.card {
+    border: 1px solid #999;
+    border-radius: 5px;
+    background-color: aliceblue;
+    text-align: center;
+}
+.header{
+    height: 150px;
+    background-color: rgb(142, 142, 250);
+}
+
+@media( min-width: 600px){
+    .container-satu{
+        display: flex;
+    }
+    .container-dua{
+        display: flex;
+        justify-content: space-between;
+    }
+    .portofolio{
+        width: 30%;
+    }
+    .thubnail{
+        width: 30%;
+    }
+}
